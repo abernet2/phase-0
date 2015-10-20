@@ -21,10 +21,15 @@ Committed, modified and staged. Modified means that changes have been made since
 ##Write a handy cheatsheet of the commands you need to commit your changes:
 
 clone: copy a repo to a local location
+
 fork: copy a repository into your github, this will include all branches and will work independently of the original repo.
+
 checkout: request a copy of a specific branch, or create a new branch if the name you provide doesnt exist.
+
 add: There is a staging area for changes, you have to ADD your changes to that area if they are new files/directories.
+
 commit: commit the changes to your branch. Include a message using the correct style.
+
 
 ##What is a pull request and how do you create and merge one?
 

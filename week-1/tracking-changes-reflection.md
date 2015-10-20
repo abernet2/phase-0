@@ -24,7 +24,7 @@ clone: copy a repo to a local location
 
 fork: copy a repository into your github, this will include all branches and will work independently of the original repo.
 
-checkout: request a copy of a specific branch, or create a new branch if the name you provide doesnt exist.
+checkout: request a copy of a specific branch, or create a new branch if the name you provide doesnt exist. This has both local and remote copies, you need to use pull to update the local copies to the remote.
 
 add: There is a staging area for changes, you have to ADD your changes to that area if they are new files/directories.
 
@@ -33,7 +33,9 @@ commit: commit the changes to your branch. Include a message using the correct s
 
 ##What is a pull request and how do you create and merge one?
 
-A pull request is a request to update your code with other changes that may have been made. The pull is the first half of that process: getting the new changes. In order to update your code, you need to also merge that pull request with your code.
+A pull request is a request to update your local code with other changes that may have been made to the remote repository. The pull combines the fetch and merge commands, it FETCHES the updates and then also handles the MERGING.
+
+When you pull to a local repository, you effectively update your code with changes that have been made online. When you pull online, you have to go through a pull and merge request where you can view and verify the changes that have been made.
 
 ##Why are pull requests preferred when working with teams?
 

@@ -4,8 +4,7 @@
 
 https://github.com/abernet2/abernet2.github.io
 
-##Explain how to create a repository on GitHub and clone the repository to your local computer to a non-
-technical person.
+##Explain how to create a repository on GitHub and clone the repository to your local computer to a non-technical person.
 
 A repository is similar to a file system on your computer. It's a place to store all the files from a particular project. To create a repository, you can go on the GitHub website and press the "+" button next to your profile picture. Once you've done that, select "new repository" and follow the instructions from there. If in doubt about any of the settings, select public and add an MIT License.
 

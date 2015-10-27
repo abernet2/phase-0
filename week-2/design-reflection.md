@@ -1,6 +1,6 @@
 #Design Reflection
 
-![My Image](/week2/imgs/site-map.png)
+![My Image](/week-2/imgs/site-map.png)
 
 ##1. What are the 6 Phases of Web Design?
 

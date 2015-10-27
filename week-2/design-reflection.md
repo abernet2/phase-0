@@ -1,10 +1,11 @@
 #Design Reflection
 
-![My Image](/imgs/site-map.png)
+![My Image](/week2/imgs/site-map.png)
 
 ##1. What are the 6 Phases of Web Design?
 
 The six phases of web design are:
+
 1. **Information Gathering:** Gathering information about the business goals and dreams that this site should fulfill. Questions like: who is this site aimed at? What are we trying to acheive in this site and what kind of content are we looking to post? All will help inform and better structure your website as you build on.
 
 2. **Planning:** This is where you map out all the main topic areas and perhaps even sub-topics. The point of planning is to flesh out where different content will go, and to ensure the site navigation makes logical sense. This is also the time when the developer will help choose what technologies will be necessary to achieve the desired results.

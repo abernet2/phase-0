@@ -1,7 +1,7 @@
 #Wireframe Reflection
 
-![HERE's MY WIREFRAME](/week-2/imgs/wireframe-index)
-![HERE's MY WIREFRAME](/week-2/imgs/wireframe-blog-index)
+![HERE's MY WIREFRAME](/week-2/imgs/wireframe-index.png)
+![HERE's MY WIREFRAME](/week-2/imgs/wireframe-blog-index.png)
 
 ###What is a wireframe?
 

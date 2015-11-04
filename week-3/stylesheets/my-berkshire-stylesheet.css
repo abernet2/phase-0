@@ -1,0 +1,85 @@
+/*
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+The file's relative address is very important. I guess it could also be important to know who else has access to the file. 
+Accoeding to W3schools, when a CSS sheet is loaded affects how the document is styled if there are inline style choices made. 
+So It is also important to know when to load an external file because the way a browser renders could be affected.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+For the columns we used floats which caused the div below to sneak up in the page, so we used clear. We also used spans
+and displayed them like blocks to get line breaks. And it wasn't very hard to get everything positioned correctly, but if
+we wanted to make an exact replica it would have taken much longer to fine tune everything.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+We had a good amount of color changes, we also used borders for the line breaks. We had a few clears since we used float.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+They were already included for the most part, we did add a div specifically for the line break and we added some spans to
+get line breaks with span elements, but other than that we tried not to touch the html.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+Definitely our code. The actual site code was almost twice as long, they also used a different list for
+every link in the main part of the page. Everyone one of those lists was listed in a table element.
+Then each table element had its own style attributes, many of them were the same, so a stylesheet
+could have removed a lot of redundancy. Then the use of p/font tags is super confusing, I'm pretty sure
+the whole body is nested in a p tag with align=center style (including a center element).
+
+*/
+html {
+  background-color:  #ffffff;
+}
+* {
+    color: #000080;
+}
+a {
+    color:  #800080;
+}
+a:visited {
+    color:  #ff0000;
+}
+li {
+    color: initial;
+    font-size: .75em;
+    padding: .2em;
+}
+#left-links {
+    float: left;
+    border-bottom: 0;
+}
+#right-links {
+    float: right;
+    border-bottom: 0;
+}
+#geico {
+    clear: both;
+    text-align: center;
+    font-size: .8em;
+}
+div {
+    border-bottom: 1px solid black;
+}
+.header {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+.address {
+    display: block;
+}
+.initials {
+    font-size: 2em;
+}
+.newline {
+    display: block;
+}
+#geico p {
+    margin-top: 0;
+}
+#clear {
+    clear: both;
+}

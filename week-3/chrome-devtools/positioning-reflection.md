@@ -76,20 +76,20 @@ tripped me up.
 
 ##Images
 
-![Challenge1 Pic](/week-3/chrome-devtools/imgs/Challenge1.png)
+![Challenge1 Pic](/week-3/chrome-devtools/imgs/Challenge1.PNG)
 
-![Challenge2 Pic](/week-3/chrome-devtools/imgs/Challenge2.png)
+![Challenge2 Pic](/week-3/chrome-devtools/imgs/Challenge2.PNG)
 
-![Challenge3 Pic](/week-3/chrome-devtools/imgs/Challenge3.png)
+![Challenge3 Pic](/week-3/chrome-devtools/imgs/Challenge3.PNG)
 
-![Challenge4 Pic](/week-3/chrome-devtools/imgs/Challenge4.png)
+![Challenge4 Pic](/week-3/chrome-devtools/imgs/Challenge4.PNG)
 
-![Challenge5 Pic](/week-3/chrome-devtools/imgs/Challenge5.png)
+![Challenge5 Pic](/week-3/chrome-devtools/imgs/Challenge5.PNG)
 
-![Challenge6 Pic](/week-3/chrome-devtools/imgs/Challenge6.png)
+![Challenge6 Pic](/week-3/chrome-devtools/imgs/Challenge6.PNG)
 
-![Challenge7 Pic](/week-3/chrome-devtools/imgs/Challenge7.png)
+![Challenge7 Pic](/week-3/chrome-devtools/imgs/Challenge7.PNG)
 
-![Challenge8 Pic](/week-3/chrome-devtools/imgs/Challenge8.png)
+![Challenge8 Pic](/week-3/chrome-devtools/imgs/Challenge8.PNG)
 
-![Challenge9 Pic](/week-3/chrome-devtools/imgs/Challenge9.png)
+![Challenge9 Pic](/week-3/chrome-devtools/imgs/Challenge9.PNG)

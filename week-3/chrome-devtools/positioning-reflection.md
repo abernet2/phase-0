@@ -76,20 +76,20 @@ tripped me up.
 
 ##Images
 
-![Challenge1 Pic]{/imgs/Challenge1.png}
+![Challenge1 Pic](/imgs/Challenge1.png)
 
-![Challenge2 Pic]{/imgs/Challenge2.png}
+![Challenge2 Pic](/imgs/Challenge2.png)
 
-![Challenge3 Pic]{/imgs/Challenge3.png}
+![Challenge3 Pic](/imgs/Challenge3.png)
 
-![Challenge4 Pic]{/imgs/Challenge4.png}
+![Challenge4 Pic](/imgs/Challenge4.png)
 
-![Challenge5 Pic]{/imgs/Challenge5.png}
+![Challenge5 Pic](/imgs/Challenge5.png)
 
-![Challenge6 Pic]{/imgs/Challenge6.png}
+![Challenge6 Pic](/imgs/Challenge6.png)
 
-![Challenge7 Pic]{/imgs/Challenge7.png}
+![Challenge7 Pic](/imgs/Challenge7.png)
 
-![Challenge8 Pic]{/imgs/Challenge8.png}
+![Challenge8 Pic](/imgs/Challenge8.png)
 
-![Challenge9 Pic]{/imgs/Challenge9.png}
+![Challenge9 Pic](/imgs/Challenge9.png)

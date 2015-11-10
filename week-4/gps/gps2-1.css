@@ -1,0 +1,66 @@
+p, a, section, h1 {
+	font-family: sans-serif;
+}
+h2, h3, h4 {
+	font-family: serif;
+}
+
+body, header, h1 {
+	margin: 0;
+}
+
+body {
+	text-align: center;
+}
+
+header, section {
+	text-align: left;
+}
+
+h1 {
+	font-weight: 900;
+	padding: 50px 25px 25px;
+}
+
+p {
+	line-height: 1.3em;
+}
+
+header {
+	background-color: #1279ee;
+	color: white;
+	position: relative;
+}
+
+header p {
+	background-color: cyan;
+	color: black;
+	padding: 25px;
+}
+
+section {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 3%;
+    padding-top: 20px;
+}
+
+summary {
+    background: #ddd;
+    border-bottom: 1px solid #aaa;
+    padding: 2px 0;
+    font-weight: 900;
+}
+
+details p {
+    background: #EFEFEF!important;
+    margin: 0 0 10px 0;
+    padding: 8px;
+    font-size: .8em;
+}
+
+footer {
+	padding: 20px;
+}
+

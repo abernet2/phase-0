@@ -40,3 +40,6 @@ fav = fav.to_i
 # 	https://github.com/abernet2/phase-0/tree/master/week-4/address
 # 	https://github.com/abernet2/phase-0/tree/master/week-4/define-method
 # 	https://github.com/abernet2/phase-0/tree/master/week-4/math
+
+fav += 1
+puts "Maybe you'd like this number better? " + (fav).to_s

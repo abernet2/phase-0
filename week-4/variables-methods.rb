@@ -10,5 +10,6 @@ puts "Thanks "+first+" "+middle+" "+last+" now I'm going to go steal your identi
 puts "What is your FAVORITE number?"
 fav = gets.chomp
 fav = fav.to_i
-
+fav += 1
+puts "Maybe you'd like this number better? " + (fav).to_s
 

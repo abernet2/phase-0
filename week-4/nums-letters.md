@@ -1,10 +1,10 @@
 ### Programming Assignment Links
 
-[Defining Variables]("https://github.com/abernet2/phase-0/blob/master/week-4/defining-variables.rb")
+[Defining Variables](https://github.com/abernet2/phase-0/blob/master/week-4/defining-variables.rb)
 
-[Simple Strings]("https://github.com/abernet2/phase-0/blob/master/week-4/simple-string.rb")
+[Simple Strings](https://github.com/abernet2/phase-0/blob/master/week-4/simple-string.rb)
 
-[Basic Math]("https://github.com/abernet2/phase-0/blob/master/week-4/basic-math.rb")
+[Basic Math](https://github.com/abernet2/phase-0/blob/master/week-4/basic-math.rb)
 
 # Release 7 Reflections
 
@@ -24,7 +24,7 @@ return 7.5 if you dont.
 
 ##What is the difference between integers and floats?
 
-Integers aren't encoded to store decimals, floats are. [Here's a demonstration]("http://www.dummies.com/how-to/content/the-real-difference-between-integers-and-floatingp.html").
+Integers aren't encoded to store decimals, floats are. [Here's a demonstration](http://www.dummies.com/how-to/content/the-real-difference-between-integers-and-floatingp.html).
 You might think, 'why don't I just use floats all the time?' For the same amount
 of memory, you can store bigger numbers if you don't include decimals. Also it's
 just simpler, and sometimes you might actually want to use remainders and whole 

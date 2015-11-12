@@ -1,4 +1,47 @@
-#What does puts do?
+# Release 7 Reflections
+
+##How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+Pretty much like the normal math, it obeys order of operations and can perform any of
+those on most numbers, although there are limitations to how specific or large the ans-
+wer can be. 
+
+Where it diverges from normal math is that it treats numbers with decimals differently.
+If Ruby sees a decimal on a number that you enter, it will store it and treat it as a
+floating point (number with a decimal). If you want to mix them, it will always give
+you a float for an answer. If you want to divide two fixnums (numbers without decimals)
+with the result of a float, then you need to convert one to a float. 15/2 will never
+return 7.5 if you dont.
+
+
+##What is the difference between integers and floats?
+
+Integers aren't encoded to store decimals, floats are. [Here's a demonstration]("http://www.dummies.com/how-to/content/the-real-difference-between-integers-and-floatingp.html").
+You might think, 'why don't I just use floats all the time?' For the same amount
+of memory, you can store bigger numbers if you don't include decimals. Also it's
+just simpler, and sometimes you might actually want to use remainders and whole 
+number division. 
+
+##What is the difference between integer and float division?
+
+
+
+##What are strings? Why and when would you use them?
+
+
+
+##What are local variables? Why and when would you use them?
+
+
+
+##How was this challenge? Did you get a good review of some of the basics?
+
+
+
+
+# Release 2 Reflections
+
+##What does puts do?
 
 Puts prints whatever string you give it and then it puts a new line on the back
 of it so that it sits on its own. You could also use p or print but they dont 
@@ -11,7 +54,7 @@ An integer is a number without decimals at the back and a float is a number with
 decimals. Because numbers are stored in bits and bytes, its much easier to store
 whole numbers and they are also used more often. 
 
-#What is the difference between float and integer division?
+##What is the difference between float and integer division?
 How would you explain the difference to someone who doesnt know anything about
 programming?
 

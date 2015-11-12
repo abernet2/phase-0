@@ -1,3 +1,4 @@
+
 ### Programming Assignment Links
 
 [Defining Variables](https://github.com/abernet2/phase-0/blob/master/week-4/defining-variables.rb)
@@ -20,7 +21,6 @@ floating point (number with a decimal). If you want to mix them, it will always 
 you a float for an answer. If you want to divide two fixnums (numbers without decimals)
 with the result of a float, then you need to convert one to a float. 15/2 will never
 return 7.5 if you dont.
-
 
 ##What is the difference between integers and floats?
 
@@ -57,6 +57,7 @@ and also I want to say things in these reviews that I'm not sure of, so it force
 me to re-research things I thought I already knew.
 
 # Release 2 Reflections
+>>>>>>> master
 ##What does puts do?
 
 Puts prints whatever string you give it and then it puts a new line on the back

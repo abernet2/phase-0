@@ -12,19 +12,20 @@
 # Your Solution Below
 
 def get_grade(average)
-  if average >= 90
-    return "A"
-  elsif average >= 80
-    return "B"
-  elsif average >= 70
-    return "C"
-  elsif average >= 60
-    return "D"
+  case average
+  when 90...100
+    return 'A'
+  when 80..90
+    return 'B'
+  when 70..80
+    return 'C'
+  when 60..70
+    return 'D'
   else
-    return "F"
+    return 'F'
   end
 end
 
-average = 3
+average = 93
 
 puts get_grade(average)

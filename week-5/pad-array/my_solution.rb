@@ -53,7 +53,7 @@ def pad!(array, min_size, value = nil) #destructive
 	(0...range).each do |i|
 		array.push(value)
 	end
-	#return array
+	return array
 end
 
 def pad(array, min_size, value = nil) #non-destructive

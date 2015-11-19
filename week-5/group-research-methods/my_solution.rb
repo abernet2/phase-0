@@ -113,9 +113,24 @@ end
 
 # Release 1: Identify and describe the Ruby method you implemented. Teach your
 # accountability group how to use the methods.
+# I used the sort methods. Ruby has two types of sort methods: sort and sort_by. In terms of you writing
+# your code, the biggest difference between the two is that SORT takes 2 block parameters and SORT_BY takes 2
+# 
+# EX:
+# sort {|a,b| b <=> a }
+# sort_by {|a| -a}
 #
-#
-#
+# Since they take different block parameters, they also work a little differently. a and b represent two
+# objects in the enumerable that you are comparing. They are also optional, sort will work just fine if you
+# choose not to specify anything. The comparison will be done using the <=> comparator.
+# Switching a and b like I did essentially reverses the values.
+# 
+# Sort_by on the other hand tells the program what criteria to sort_by (hence the name). Sort_by requires 
+# that you pass in a block. It also lets you specify a secondary condition, as I did in my code :)
+# 
+# I'm sure you're looking for a rule of thumb so here's what I'd say: if all you want to do is sort an array of ints
+# or floats or something simple like that, use sort and don't worry about it. If you want to do any sort of custom sort
+# or to work on more complicated data, use sort_by.
 
 
 # Release 3: Reflect!

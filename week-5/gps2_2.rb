@@ -82,3 +82,32 @@ display(master_list)
 
 # steps: display list and other words to make grocery enjoyable
 # output:
+
+#What did you learn about pseudocode from working on this challenge?
+# We chose to pseudocode everything rather than each individual function, and that helped to see how we would have to pass
+# the list function into each method. It seemed like pseudo-code helped to flesh out the bigger picture.
+#
+#What are the tradeoffs of using Arrays and Hashes for this challenge?
+# Using an array didn't make a whole lot of sense I thought. Essentially you would have to store an array of arrays to make
+# the association between items and their quantities work. Even then, if you wanted to delete an item, you would have to go 
+# through the array looking for it. 
+#
+# The good part of the hash is the ability to call out items by name, since that's how you would generally use a grocery
+# list. 
+#
+#What does a method return?
+# The value that you designate. It can either be designated explicitly or implicitly, but Ruby methods always return.
+#
+#What kind of things can you pass into methods as arguments?
+# arrays, hashes, basically anything with a variable name, you can pass into methods, (including other methods).
+#
+#How can you pass information between methods?
+# you can pass in a value which you will edit. For instance, you can pass in an array to add to. You can also return objets
+# and then pass them into other methods.
+#
+#What concepts were solidified in this challenge, and what concepts are still confusing?
+# Since Ruby is interpreted, it became clear that it reads a document from the top down from how we did our method calls. 
+# I also, in the process of refactoring learned about how Hashes interact with arrays, specifically that they can take
+# an array of arrays and hash them or they can output their contents to the same format. Finally, it felt like this was 
+# basically a class we were creating, we just weren't allowed to encapsulate it. So I guess it helped to understand that 
+# these classes work best when they cooperate with each other and have properly narrow functionalities.

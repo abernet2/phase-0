@@ -6,12 +6,17 @@ def add_item(list,item,quantity=1)
 end
 
 def create_list(items, quantity = 1)
-	list = Hash.new
-	split_items = items.split(" ") 
-	split_items.each do |item|
-		add_item(list,item,quantity)
-		list[item] = quantity
-	end
+	# Original
+	# list = Hash.new
+	# split_items = items.split(" ") 
+	# split_items.each do |item|
+	# 	add_item(list,item,quantity)
+	# 	list[item] = quantity
+	# end
+	# 
+	# Refactored (I'm not sure which one is more readable, but I had to see if this worked)
+	split_items = items.split(" ")
+	list = Hash[split_items.map { |item| [item, quantity] }]
 	return list
 end
 

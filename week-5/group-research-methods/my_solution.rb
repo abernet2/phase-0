@@ -36,14 +36,14 @@ end
 
 # Person 3 - Jack Abernethy
 def my_array_sorting_method(source)
-  result = source.sort
+  result = source.sort { |a, b| a.to_s <=> b.to_s }
 end
 
 def my_hash_sorting_method(source)
   result = source.sort_by { |a| [a[1], a[0]] }
 end
 
-arr = ["abd",'zxe','cdeee','abc']
+arr = [1, "abd",'zxe','cdeee','abc']
 hash = {
   "cat" => 9,
   "bronco" => 9,

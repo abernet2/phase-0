@@ -102,9 +102,23 @@ class CreditCard
 end
 
 
-
-
-
-
-
 # Reflection
+=begin
+What was the most difficult part of this challenge for you and your pair?
+  Addressing how to handle odd numbers. I didnt understand that we had to add the digits
+  and then implementing that was also challenging.
+  
+What new methods did you find to help you when you refactored?
+  We agreed their wasn't much to do in order to refactor. I really wanted to make more methods
+  in order to have the code be a little more readable, so I refactored along those lines, but no
+  new methods really.
+
+What concepts or learnings were you able to solidify in this challenge?
+  I think we were supposed to solidify our understanding of classes, but I really didn't understand
+  why this needed to be a class. If you are reviewing,  please feel free to share your thoughts, I
+  don't see why this couldn't have been a method.
+  
+  Personally I feel like I fiddled with how to break up tasks into helper functions. The specification
+  suggested a different way and I think it would have been more readable to go that way. Live and learn!
+
+=end

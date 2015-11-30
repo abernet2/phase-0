@@ -1,87 +1,90 @@
 # Virus Predictor
 
 # I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# We spent [2] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
+# includes a file based on a relative path
 #
 require_relative 'state_data'
 
 class VirusPredictor
 
-  def initialize(state_of_origin, population_density, population)
-    @state = state_of_origin
-    @population = population
-    @population_density = population_density
+  def initialize(state_hashy_hash)
+    @data = state_hashy_hash
   end
 
-  def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+  def virus_effects(state)
+    death_toll = predicted_deaths(state)
+    months = time_until_spread(state)
+    puts "#{state} will lose #{death_toll} people in this outbreak and will spread across the state in #{months} months.\n\n"
+  end
+
+  def fifty_state_report
+    @data.each do |state, data|
+      virus_effects(state)
+    end
   end
 
   private
 
-  def predicted_deaths(population_density, population, state)
-    # predicted deaths is solely based on population density
-    if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
-    else
-      number_of_deaths = (@population * 0.05).floor
-    end
-
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
+  def predicted_deaths(state)
+    multiplier = density_level(state) * 0.1
+    multiplier = 0.05 if multiplier == 0
+    number_of_deaths = @data[state][:population] * multiplier
+    number_of_deaths.floor
   end
 
-  def speed_of_spread(population_density, state) #in months
-    # We are still perfecting our formula here. The speed is also affected
-    # by additional factors we haven't added into this functionality.
-    speed = 0.0
+  def time_until_spread(state)
+    months = 2.5 - density_level(state) * 0.5   # decrements by half a month for every density level of 50
+  end
 
-    if @population_density >= 200
-      speed += 0.5
-    elsif @population_density >= 150
-      speed += 1
-    elsif @population_density >= 100
-      speed += 1.5
-    elsif @population_density >= 50
-      speed += 2
-    else
-      speed += 2.5
-    end
 
-    puts " and will spread across the state in #{speed} months.\n\n"
-
+  # returns a density level 0-4
+  def density_level(state)
+    pop_density = @data[state][:population_density].to_i
+    pop_density = 200 if pop_density > 200
+    density_level = pop_density / 50
   end
 
 end
 
+
 #=======================================================================
 
 # DRIVER CODE
- # initialize VirusPredictor for each state
 
-
-alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-alabama.virus_effects
-
-jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-jersey.virus_effects
-
-california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-california.virus_effects
-
-alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-alaska.virus_effects
-
+my_vp = VirusPredictor.new(STATE_DATA)
+my_vp.fifty_state_report
 
 #=======================================================================
 # Reflection Section
+=begin 
+What are the differences between the two different hash syntaxes shown in the state_data file?
+  One uses rocket syntax, the other uses symbols, which sytactically looks like key > val
+  vs key: val. Since symbols are written like :sym, reversing the colon is an intuitive
+  way to make a hash with symbols, which is why it doesn't work with strings. If you used
+  a string with : it would force it into a symbol.
+
+What does require_relative do? How is it different from require?
+  It includes a file based on a relative path, vs require which searchs through a system's paths.
+
+What are some ways to iterate through a hash?
+  You can use #each to iterate through each key, value pair or through each as a an array that holds
+  both.
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+  The default was to pass in instance variables, which is completely unneccessary. The method
+  you are calling already can access the variables. 
+
+What concept did you most solidify in this challenge?
+  How/when to pass in variables and declare instance variables. I also learned about constants.
+  One thing I really struggled with in my refactor was whether to make my helper functions take
+  a state name or the data and simply calculate that data. I kind of think the latter would be
+  better but I don't want to do another refactor after all the time I spent. If they took, for
+  instance, the density level vs the state name then I would only need to calculate that once.
+
+  It's tough to figure out which variables to pass and what the implications of that pass will
+  be down the line.
+
+=end

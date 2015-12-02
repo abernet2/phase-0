@@ -31,8 +31,49 @@ Pseudocode:
 	Steps:
 		1. Sort the array in order from least to greatest
 		2. Find the length of the list and divide by 2, store result in a variable
-		3. IF length is odd
-			return list[length/2]
-		   ELSE
-		   	return (list[length/2] + list[(length/2)-1]) / 2
+			-3. IF length is odd
+				return list[length/2]
+			   ELSE
+			   	return (list[length/2] + list[(length/2)-1]) / 2
 */
+// Function 1
+function isArrayOfNum(arr) {
+	if(!Array.isArray(arr)) throw new Error("Input is not an array");
+	for(var i = 0; i < arr.length; i++) {
+		if(isNaN(arr[i]))	throw new Error("Input is an array with at least 1 NaN value");
+	}
+	return arr;
+}
+
+// Function 2
+function sum(arr) {
+	var runSum = 0;
+	for(var i = 0; i < arr.length; i++)
+		runSum += arr[i];
+	return runSum;
+}
+
+// Function 3
+function mean(arr) {
+	var runSum = 0;
+	for(var i = 0; i < arr.length; i++)
+		runSum += arr[i];
+	return runSum / arr.length;
+}
+
+// Function 4
+function median(arr) {
+	sortedArr = arr.sort(function(a, b) {
+		return a - b;
+	});
+	length = arr.length;
+	if (length % 2 == 1)
+		return arr[length/2];
+	else
+		return (arr[length/2] + arr[length/2 - 1]) / 2;
+}
+
+var meantest = mean([1,2,3,4,5,6]);
+var mediantest = median([1,2,3,4,5,9]);
+
+console.log(mediantest);

@@ -105,7 +105,20 @@ assert(
 
 /*
 What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+	No, I think the both of us ended up coming back to our initial solution after a little bit of thinking. Javascript
+	just felt a little bit more "in the trenches" like we had to do things manually.
+
 What did you learn about iterating over arrays in JavaScript?
+	Not much lol, neither of our solutions used arrays. We did look through the documentation early on and we saw 
+	Javascript does have a method similar to #each, but its much less usable.
+
 What was different about solving this problem in JavaScript?
+	It's tough to tell, both of our solutions were much much cleaner than my original solution. The while loop solved
+	a bunch of if-else type of issues, and that was probably a result of having two weeks for our brains to soak in 
+	the challenge. That said, if we had done this with Ruby, we probably would have simply inserted the commas, but
+	we weren't sure after some research how to do that in Javascript, so we stuck with our solutions.
+
 What built-in methods did you find to incorporate in your refactored solution?
+	Substr, floor and toString, which we pretty much knew existed, but weren't sure about the spelling.
+
  */

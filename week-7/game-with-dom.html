@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Go Fish</title>
+	<meta charset="utf-8"/>
+	<script src="game.js"></script>
+</head>
+<style>
+	div, div.card {
+		height: 150px;
+		width: 100px;
+		padding: 50px 25px 0 25px;
+		border: 1px solid blue;
+		border-radius: 5px;
+		text-align: center;
+		vertical-align: center;
+		display: inline-block;
+		margin: 5px;
+		position: relative;
+		bottom: 0;
+		transition: all 1s ease 0s;
+	}
+	.active {
+		background: yellow;
+		bottom: -100px!important;
+	}
+</style>
+<body>
+	<script>
+		goFish();
+	</script>
+	<button id="gofish">Go Fish!</button>
+	<script>
+	  var button = document.querySelector("button");
+	  button.addEventListener("click", function() {
+	    console.log("Button clicked.");
+	    var active = document.getElementsByClassName("active");
+	    active = active[0];
+	    console.log(active.classList[1]);
+	    var val = active.classList[1];
+	    player1.ask(player2, val);
+	    console.log(player1.cards);
+	    // if (player2.has(val)) {
+	    // 	console.log("player2 has match");
+	    // 	active.style.display = "none";
+	    // 	player1.score++;
+	    // }
+	    // else {
+	    // 	// else draw a card
+	    // 	player1.draw
+	    // }
+
+	    // look for active card
+	    // if no active card, then alert the user
+	    // else, take card and see if the other person has the same
+	    	// if they have the same, take the card away from both players
+	    	// else add a card to current player
+    	// switch turns
+	  });
+    </script>
+</body>
+</html>

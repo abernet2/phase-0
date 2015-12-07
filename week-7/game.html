@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Go Fish</title>
+	<meta charset="utf-8"/>
+	<script src="game.js"></script>
+</head>
+<style>
+	.active {
+		background: yellow;
+		bottom: -100px!important;
+	}
+	.hidden {
+		display: none;
+	}
+</style>
+<body>
+<script>
+	player1.printCards();
+	// player2.printCards();
+</script>
+	<div id="player1">
+		<h1>Player 1's Turn</h1>
+		<input type="text" id="input1" />
+		<button onclick="player1.ask(player2)" id="button1" >Player1 ask</button>
+		<script>
+			player1.div = document.getElementById("player1");
+			player1.input = document.getElementById("input1");
+		</script>
+	</div>
+	<div id="player2"  class = "hidden" >
+		<h1>Player 2's Turn</h1>
+		<input type="text" id="input2"/>
+		<button onclick="player2.ask(player1)" id="button2">Player2 ask</button>
+		<script>
+			player2.div = document.getElementById("player2");
+			player2.input = document.getElementById("input2");
+		</script>
+	</div>
+</body>
+</html>

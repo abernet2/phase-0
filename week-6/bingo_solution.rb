@@ -78,28 +78,26 @@ class BingoBoard
 
   def initialize(board)
     bingo_board = board.transpose
-    @board = {:B => bingo_board[0], :I => bingo_board[1],
-      :N => bingo_board[2], :G => bingo_board[3], :O => bingo_board[4]}
+    @board = {"B" => bingo_board[0], "I" => bingo_board[1],
+      "N" => bingo_board[2], "G" => bingo_board[3], "O" => bingo_board[4]}
   end
 
   def call
     num = rand(100) + 1
-    letters = ["B", "I", "N", "G", "O"]
-    letter = letters[rand(5)]
-    return "#{letter.to_s}#{num}"
+    letter = ["B", "I", "N", "G", "O"].sample
+    return "#{letter}#{num}"
   end
 
   def check(call)
-    call.upcase!
-    letter = call[0].to_sym
-    num = call.gsub(/[^\d]/, '') # removes numbers from call
+    letter = call[0]
+    num = call[1]
     @board[letter].map! do |cell|
       cell == num ? cell = 'XX' : cell = cell
     end
   end
 
   def print_column(letter)
-    col = @board[letter.to_sym]
+    col = @board[letter]
     col.each { |cell| puts "|#{cell}|"}
   end
 
@@ -124,7 +122,7 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 puts "Gen Letter #{new_game.call}"
-new_game.check('B22')
+new_game.check(['B',22])
 new_game.print_column("B")
 new_game.print_board
 

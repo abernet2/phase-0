@@ -66,7 +66,13 @@ function separateComma(number) {
   return num_with_commas;
 }
 
+// with tail recursion
+// function separateComma(number) {
+//   if(number < 1000) return number + "";
+//   return separateComma(Math.floor(number / 1000)) + "," + separateComma(number%1000);
+// }
 
+console.log(separateComma(12));
 
 // Your Own Tests (OPTIONAL)
 

@@ -61,16 +61,13 @@ function addItemFromInput() {
 
 function toggleActive() {
    console.log(this.tagName);
-   if(this.tagName != "input") {
-      var curr = document.getElementsByClassName("active");
-      if (curr.length !== 0) {
-         curr[0].classList.remove("active")
-      }
-      else {
-         this.classList.toggle("active");
-      }
+   var curr = document.getElementsByClassName("active");
+   if (curr.length !== 0) {
+      curr[0].classList.remove("active")
    }
-   else console.log("TEST");
+   else {
+      this.classList.toggle("active");
+   }
 }
 
 var toggleEdit = function() {
@@ -82,3 +79,19 @@ var toggleEdit = function() {
    console.log(list);
 }
 Element.prototype.toggleEdit = this.toggleEdit;
+
+/*
+
+Currently the code looks very messy. I'm trying very hard to avoid the
+temptation to use Jquery, I want to learn more javascript before I hit
+that easy button. Just assigning event handlers is a bit of an issue.
+Right now I can't figure out a way to get the toggleActive method to act
+right with a double click.
+
+Also ideally I'd want the functionality where if you change a name to a 
+name that already is in the list, it gets rid of one of them. Getting
+a site that automatically adds an element when you give it a value wasn't
+very difficult, but getting that to sync with the javascript list is
+proving very difficult.
+
+ */

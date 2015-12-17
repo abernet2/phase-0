@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grocery List</title>
+	<meta charset="utf-8"/>
+	<!--<script src="review.js"></script> -->
+</head>
+<style>
+	* {
+		text-align: center;
+	}
+	div {
+		max-width: 450px;
+		margin: 10px auto;
+	}
+
+	.item {
+		border: 1px solid #cce;
+		padding: 5px;
+	}
+
+	.item input, .item p {
+		width: 49.5%;
+		height: 100%;
+	}
+	.item input {
+		color: rgb(64,64,64);
+		border: none;
+		text-align: center;
+		line-height: 2em;
+		padding: 0;
+		margin: 0 10px;
+		width: auto;
+		pointer-events: none;
+	}
+	.item p {
+		display: inline-block;
+		line-height: 2em;
+		background-color: #ddf;
+	}
+	div.item:first-child p {
+		background-color: red;
+	}
+	.quantity {
+		background-color: #cce;
+	}
+	.name {
+		background-color: #aac;
+	}
+
+	div.active {
+		border-color: yellow;
+	}
+</style>
+<body>
+	<h1>Make a Grocery List!</h1>
+    <div id="form">
+    	<p>Item name:</p> <input type="text" id="ItemName" value="Stuff"><br>
+        <p>How Many?:</p> <input type="number" id="Quantity" value="1"><br>
+        <button onclick="addItemFromInput()">Submit</button>
+   </div>
+
+    <template id="item-template">
+    	<div class="item" >
+    		<input type="text" class="name" readonly="true" >
+    		<input type="number" class="quantity" readonly="true" >
+    	</div>
+    </template>
+
+	<script src="review.js"></script>
+</body>
+</html>

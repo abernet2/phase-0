@@ -82,16 +82,20 @@ Element.prototype.toggleEdit = this.toggleEdit;
 
 /*
 
-Currently the code looks very messy. I'm trying very hard to avoid the
-temptation to use Jquery, I want to learn more javascript before I hit
-that easy button. Just assigning event handlers is a bit of an issue.
-Right now I can't figure out a way to get the toggleActive method to act
-right with a double click.
+What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+   Event handlers were very confusing and this challenge was super helpful. For example, if I pass a function to an element via the
+   html onclick property, the "this" of the function will be an event. But if I add an event listener, "this" will be the element
+   that was selected. I guess that's why it's called an event listener, but still it was a little strange at first. Also the nodes
+   of the dom work a little differently than expected, I got one node that just said #text, so that was strange.
 
-Also ideally I'd want the functionality where if you change a name to a 
-name that already is in the list, it gets rid of one of them. Getting
-a site that automatically adds an element when you give it a value wasn't
-very difficult, but getting that to sync with the javascript list is
-proving very difficult.
+What was the most difficult part of this challenge?
+   Interacting with the DOM. Other than the difficulty of getting input, making a list really isn't hard in javascript compared to Ruby.
+   Once I incorporated the DOM it adds a whole nother layer of abstraction. Implementing a list without repeats suddenly becomes a little
+   trickier. You have to figure out a way to update the list any time the DOM is changed. I did this by adding the values of objects as 
+   classes andthen I could always get their value back. It felt a little hacky so I'm hoping there's a better way. Also getting the text
+   to be editable was tricky.
 
+Did an array or object make more sense to use and why?
+   An object since you would want to access variables by name.
+   
  */
